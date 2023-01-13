@@ -1,5 +1,5 @@
 <footer>
-    <nav class="info-nav">
+    {{-- <nav class="info-nav">
       <div class="container">
         <div class="shop-link" v-for="shop in shopLinks">
           <AppShopLink :imgSrc="shop.img" :shopText="shop.text" />
@@ -57,5 +57,5 @@
           <img src="../assets/footer-periscope.png" alt="peri" />
         </div>
       </div>
-    </div>
-  </footer>
+    </div> --}}
+</footer>
