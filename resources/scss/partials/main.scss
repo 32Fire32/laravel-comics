@@ -1,0 +1,30 @@
+main {
+    background-color: #000;
+}
+.button {
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+.content {
+    .jumbo {
+        width: 100%;
+        height: 400px;
+        img {
+            object-fit: cover;
+            object-position: top;
+            height: 100%;
+            width: 100%;
+        }
+    }
+    .container {
+        padding: 40px 0;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        .cards {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+}
