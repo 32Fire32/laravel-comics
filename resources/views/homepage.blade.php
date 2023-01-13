@@ -8,11 +8,11 @@
         <div class="ms-container">
             <div class="cards">
                 @foreach ($comics as $comic)
-                    <div class="col-md-4">
+                    <div class="comic">
                         <div class="ms-card">
                             <img class="img-fluid" src="{{ $comic['thumb'] }}" alt="{{ $comic['title'] }}">
-                            <h4>{{ $comic['title'] }}</h4>
                         </div>
+                        <h3>{{ $comic['title'] }}</h3>
                     </div>
                 @endforeach
             </div>

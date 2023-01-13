@@ -18,6 +18,8 @@ main {
         }
     }
     .ms-container {
+        margin: auto;
+        width: var(--container-size);
         padding: 40px 0;
         display: flex;
         flex-wrap: wrap;
@@ -26,22 +28,22 @@ main {
             display: flex;
             flex-wrap: wrap;
         }
-        .col-md-4 {
+        .comic {
+            width: calc(var(--container-size) / 6);
             display: flex;
             flex-direction: column;
             color: #fff;
             padding: 0 10px;
             .ms-card {
                 height: 70%;
-                width: calc(var(--container-size) / 6);
                 overflow: hidden;
+                h3 {
+                    color: #fff;
+                }
             }
             img {
                 object-fit: cover;
                 width: 100%;
-            }
-            h3 {
-                margin-top: 20px;
             }
         }
     }

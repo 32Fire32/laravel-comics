@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'Characters', 'Comics', 'Movies', 'TV', 'Games', 'Collectibles', 'Video', 'Fans', 'News', 'Shop'
+    'CHARACTERS', 'COMICS', 'MOVIES', 'TV', 'GAMES', 'COLLECTIBLES', 'VIDEO', 'FANS', 'NEWS', 'SHOP'
 ]
 
 ?>
