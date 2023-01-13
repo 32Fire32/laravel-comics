@@ -19,6 +19,7 @@
         @yield('page-content')
     </main>
 
+
     @include('partials.footer')
 </body>
 
