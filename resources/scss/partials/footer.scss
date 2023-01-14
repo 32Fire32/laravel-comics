@@ -1,0 +1,85 @@
+.info-nav {
+    position: relative;
+    z-index: 2;
+    background-color: var(--primary-color);
+    .ms-container {
+        display: flex;
+        padding: 30px 0;
+        .shop-link {
+            @include flexCenter;
+            justify-content: center;
+            color: #fff;
+            width: calc(var(--container-size) / 5);
+            img {
+                width: 30px;
+                margin-right: 10px;
+                display: block;
+            }
+        }
+    }
+}
+.footer-bg {
+    background-image: url(/resources/img/footer-bg.jpg);
+    .ms-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        position: relative;
+        img {
+            right: 0;
+            top: -60px;
+            width: 30%;
+            position: absolute;
+        }
+        .footer-links {
+            display: flex;
+            .links {
+                padding: 10px;
+                h3 {
+                    color: #fff;
+                    margin: 10px 0;
+                }
+            }
+            ul {
+                list-style: none;
+                display: block;
+                padding: 0;
+                a {
+                    text-decoration: none;
+                    color: gray;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+.footer-bottom {
+    position: relative;
+    height: 100px;
+    background-color: var(--secondary-color);
+    @include flexCenter;
+    .ms-container {
+        @include flexCenter;
+        justify-content: space-between;
+        width: 100%;
+
+        button {
+            border: 1px solid var(--primary-color);
+            background-color: var(--secondary-color);
+            padding: 10px;
+            color: #fff;
+        }
+    }
+    .social {
+        display: flex;
+        align-items: center;
+        h3 {
+            color: var(--primary-color);
+        }
+        img {
+            margin-left: 10px;
+        }
+    }
+}

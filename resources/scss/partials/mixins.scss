@@ -1,0 +1,40 @@
+// FLEX RULES
+
+@mixin flexCenter {
+    display: flex;
+    align-items: center;
+}
+
+// BUTTONS
+
+@mixin btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+}
+
+// RESPONSIVE MEDIA QUERIES
+
+$breakpoints: (
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1440px,
+);
+
+@mixin media-breakpoint-up($size) {
+    $value: map-get($breakpoints, $size);
+    @media screen and (max-width: $value) {
+        @content;
+    }
+}
+
+@mixin media-breakpoint-down($size) {
+    $value: map-get($breakpoints, $size);
+    @media screen and (max-width: $value) {
+        @content;
+    }
+}

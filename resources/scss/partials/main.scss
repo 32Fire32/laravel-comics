@@ -5,6 +5,9 @@ main {
     padding-bottom: 20px;
     width: 100%;
     text-align: center;
+    button {
+        @include btn;
+    }
 }
 .content {
     .jumbo {
